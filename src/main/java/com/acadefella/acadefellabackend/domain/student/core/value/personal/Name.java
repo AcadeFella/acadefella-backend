@@ -5,9 +5,9 @@ import lombok.Value;
 
 @Value
 public class Name {
-    @NonNull String name;
+  @NonNull String name;
 
-    public static Name create(String name) {
-        return new Name(name);
-    }
+  public static Name create(String name) {
+    return new Name(name);
+  }
 }

@@ -5,9 +5,9 @@ import lombok.Value;
 
 @Value
 public class Standard {
-    @NonNull String standard;
+  @NonNull Integer standard;
 
-    public static Standard create(String standard) {
-        return new Standard(standard);
-    }
+  public static Standard create(Integer standard) {
+    return new Standard(standard);
+  }
 }

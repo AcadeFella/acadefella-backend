@@ -5,9 +5,9 @@ import lombok.Value;
 
 @Value
 public class Section {
-    @NonNull String section;
+  @NonNull String section;
 
-    public static Section create(String section) {
-        return new Section(section);
-    }
+  public static Section create(String section) {
+    return new Section(section);
+  }
 }

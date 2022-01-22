@@ -1,4 +1,3 @@
 package com.acadefella.acadefellabackend.domain.parent;
 
-public class Parent {
-}
+public class Parent {}

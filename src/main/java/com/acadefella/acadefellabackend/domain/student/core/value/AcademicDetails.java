@@ -7,13 +7,11 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NonNull;
 
-import java.util.List;
-
 @Builder
 @Data
 public class AcademicDetails {
-    @NonNull Standard standard;
-    @NonNull RollNo rollNo;
-    @NonNull Section section;
-    @NonNull List<Exam> exams;
+  @NonNull Standard standard;
+  @NonNull RollNo rollNo;
+  @NonNull Section section;
+  @NonNull SchoolName schoolName;
 }

@@ -5,9 +5,9 @@ import lombok.Value;
 
 @Value
 public class Subject {
-    @NonNull String subject;
+  @NonNull String subject;
 
-    public static Subject create(String subject) {
-        return new Subject(subject);
-    }
+  public static Subject create(String subject) {
+    return new Subject(subject);
+  }
 }

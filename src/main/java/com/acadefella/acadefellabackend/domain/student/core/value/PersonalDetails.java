@@ -10,8 +10,8 @@ import lombok.NonNull;
 @Builder
 @Data
 public class PersonalDetails {
-    @NonNull Name name;
-    @NonNull Address address;
-    @NonNull MotherName motherName;
-    @NonNull FatherName fatherName;
+  @NonNull Name name;
+  @NonNull Address address;
+  @NonNull MotherName motherName;
+  @NonNull FatherName fatherName;
 }

@@ -11,9 +11,9 @@ import lombok.NonNull;
 @Builder
 @Data
 public class StudentState {
-    @NonNull private Name name;
-    @NonNull private UserName userName;
-    @NonNull private Password password;
-    @NonNull private PersonalDetails personalDetails;
-    @NonNull private AcademicDetails academicDetails;
+  @NonNull private Name name;
+  @NonNull private UserName userName;
+  @NonNull private Password password;
+  @NonNull private PersonalDetails personalDetails;
+  @NonNull private AcademicDetails academicDetails;
 }

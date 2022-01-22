@@ -5,9 +5,9 @@ import lombok.Value;
 
 @Value
 public class Notification {
-    @NonNull String notification;
+  @NonNull String notification;
 
-    public static Notification create(String notification) {
-        return new Notification(notification);
-    }
+  public static Notification create(String notification) {
+    return new Notification(notification);
+  }
 }

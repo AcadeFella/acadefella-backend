@@ -5,9 +5,9 @@ import lombok.Value;
 
 @Value
 public class UserName {
-    @NonNull String userName;
+  @NonNull String userName;
 
-    public static UserName create(String userName) {
-        return new UserName(userName);
-    }
+  public static UserName create(String userName) {
+    return new UserName(userName);
+  }
 }

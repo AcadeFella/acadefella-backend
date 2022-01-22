@@ -13,19 +13,19 @@ import lombok.Value;
 @Value
 @Builder
 public class CreateStudent {
-    @NonNull Name name;
-    @NonNull UserName userName;
-    @NonNull Password password;
-    @NonNull PersonalDetails personalDetails;
-    @NonNull AcademicDetails academicDetails;
+  @NonNull Name name;
+  @NonNull UserName userName;
+  @NonNull Password password;
+  @NonNull PersonalDetails personalDetails;
+  @NonNull AcademicDetails academicDetails;
 
-    public StudentState toStudentState() {
-        return StudentState.builder()
-                .name(name)
-                .userName(userName)
-                .password(password)
-                .personalDetails(personalDetails)
-                .academicDetails(academicDetails)
-                .build();
-    }
+  public StudentState toStudentState() {
+    return StudentState.builder()
+        .name(name)
+        .userName(userName)
+        .password(password)
+        .personalDetails(personalDetails)
+        .academicDetails(academicDetails)
+        .build();
+  }
 }

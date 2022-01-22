@@ -5,9 +5,9 @@ import lombok.Value;
 
 @Value
 public class Password {
-    @NonNull String password;
+  @NonNull String password;
 
-    public static Password create(String password) {
-        return new Password(password);
-    }
+  public static Password create(String password) {
+    return new Password(password);
+  }
 }

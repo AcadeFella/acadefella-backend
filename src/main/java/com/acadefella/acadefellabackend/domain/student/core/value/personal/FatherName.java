@@ -5,9 +5,9 @@ import lombok.Value;
 
 @Value
 public class FatherName {
-    @NonNull String fatherName;
+  @NonNull String fatherName;
 
-    public static FatherName create(String fatherName) {
-        return new FatherName(fatherName);
-    }
+  public static FatherName create(String fatherName) {
+    return new FatherName(fatherName);
+  }
 }

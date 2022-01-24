@@ -1,13 +1,15 @@
 package com.acadefella.acadefellabackend.util;
 
-import com.acadefella.acadefellabackend.domain.student.command.CreateStudent;
 import com.acadefella.acadefellabackend.domain.student.core.StudentState;
+import com.acadefella.acadefellabackend.domain.student.core.command.CreateStudent;
 import com.acadefella.acadefellabackend.domain.student.core.value.*;
 import com.acadefella.acadefellabackend.domain.student.core.value.academic.RollNo;
 import com.acadefella.acadefellabackend.domain.student.core.value.academic.Section;
 import com.acadefella.acadefellabackend.domain.student.core.value.academic.Standard;
 import com.acadefella.acadefellabackend.domain.student.core.value.personal.*;
+import com.acadefella.acadefellabackend.message.StudentMessage;
 import com.github.javafaker.Faker;
+import java.time.Instant;
 
 public class TestDataBuilder {
   private static final Randomizer randomizer = Randomizer.create();
@@ -17,7 +19,7 @@ public class TestDataBuilder {
     var name = Name.create(faker.name().name());
     return StudentState.builder()
         .name(name)
-        .userName(UserName.create(faker.name().name()))
+        .email(Email.create(faker.name().name()))
         .password(Password.create(faker.random().hex()))
         .personalDetails(randomPersonalDetailsBuilder().build())
         .academicDetails(randomAcademicDetailsBuilder().build());
@@ -26,7 +28,9 @@ public class TestDataBuilder {
   public static CreateStudent.CreateStudentBuilder randomCreateStudentBuilder() {
     return CreateStudent.builder()
         .name(Name.create(faker.name().name()))
-        .userName(UserName.create(faker.name().name()))
+        .email(Email.create(faker.name().name()))
+        .phoneNumber(PhoneNumber.create(faker.phoneNumber().phoneNumber()))
+        .dob(Instant.now())
         .password(Password.create(faker.random().hex()))
         .personalDetails(randomPersonalDetailsBuilder().build())
         .academicDetails(randomAcademicDetailsBuilder().build());
@@ -57,5 +61,14 @@ public class TestDataBuilder {
         .landMark(LandMark.create(faker.address().secondaryAddress()))
         .state(State.create(faker.address().state()))
         .street(Street.create(faker.address().streetAddress()));
+  }
+
+  public static StudentMessage.StudentMessageBuilder randomStudentMessageBuilder() {
+    return StudentMessage.builder()
+        .name(faker.name().name())
+        .email("email@fake.in")
+        .phoneNumber(faker.phoneNumber().phoneNumber())
+        .password("fakePass")
+        .dob(Instant.now());
   }
 }

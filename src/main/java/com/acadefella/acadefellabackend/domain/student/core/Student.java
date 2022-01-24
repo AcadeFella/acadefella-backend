@@ -1,6 +1,6 @@
 package com.acadefella.acadefellabackend.domain.student.core;
 
-import com.acadefella.acadefellabackend.domain.student.command.CreateStudent;
+import com.acadefella.acadefellabackend.domain.student.core.command.CreateStudent;
 import lombok.Getter;
 import lombok.NonNull;
 
@@ -12,7 +12,7 @@ public class Student {
   }
 
   public static Student create(@NonNull CreateStudent createStudent) {
-    return create(createStudent.toStudentState());
+    return create(CreateStudent.toStudentState(createStudent));
   }
 
   public static Student create(@NonNull StudentState studentState) {

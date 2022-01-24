@@ -1,18 +1,17 @@
 package com.acadefella.acadefellabackend.domain.student.core;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
-import com.acadefella.acadefellabackend.domain.student.command.CreateStudent;
+import com.acadefella.acadefellabackend.domain.student.core.command.CreateStudent;
 import com.acadefella.acadefellabackend.util.TestDataBuilder;
 import org.junit.jupiter.api.Test;
 
 class StudentTest {
 
   @Test
-  void shouldCreateStudentFromCommand() {
+  void shouldCreateStudentDomainFromCommand() {
     CreateStudent createStudent = TestDataBuilder.randomCreateStudentBuilder().build();
-    var studentState = createStudent.toStudentState();
+    var studentState = CreateStudent.toStudentState(createStudent);
     assertThat(Student.create(studentState)).isInstanceOf(Student.class);
   }
 }

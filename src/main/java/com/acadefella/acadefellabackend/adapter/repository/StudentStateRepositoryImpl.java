@@ -14,7 +14,8 @@ public class StudentStateRepositoryImpl implements StudentStateRepository {
   private final StudentStateAdapter studentStateAdapter;
 
   public StudentStateRepositoryImpl(
-          StudentStateJPARepository studentStateJPARepository, StudentStateAdapter studentStateAdapter) {
+      StudentStateJPARepository studentStateJPARepository,
+      StudentStateAdapter studentStateAdapter) {
     this.studentStateJPARepository = studentStateJPARepository;
     this.studentStateAdapter = studentStateAdapter;
   }

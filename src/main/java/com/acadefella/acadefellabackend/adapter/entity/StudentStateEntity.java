@@ -20,7 +20,7 @@ public class StudentStateEntity {
   @Id
   @Column
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Long id;
+  private String id;
 
   @Column private String name;
   @Column private String email;

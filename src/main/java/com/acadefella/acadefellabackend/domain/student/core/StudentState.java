@@ -17,6 +17,6 @@ public class StudentState {
   @NonNull private PhoneNumber phoneNumber;
   @NonNull private Instant dob;
   @NonNull private Password password;
-  @NonNull private PersonalDetails personalDetails;
-  @NonNull private AcademicDetails academicDetails;
+  private PersonalDetails personalDetails;
+  private AcademicDetails academicDetails;
 }

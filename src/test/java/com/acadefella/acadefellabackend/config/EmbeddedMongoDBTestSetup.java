@@ -105,11 +105,8 @@ public abstract class EmbeddedMongoDBTestSetup {
     var appMongoClient = MongoClients.create(connectionString);
 
     var applicationDatabase = appMongoClient.getDatabase(database);
-    applicationDatabase.createCollection("claim-purchase-intent-domain-event");
-    applicationDatabase.createCollection("claim-purchase-intent-state");
-    applicationDatabase.createCollection("loan-product");
-    applicationDatabase.createCollection("claim-debtor");
-    applicationDatabase.createCollection("claim-outgoing-event");
+    applicationDatabase.createCollection("student-domain-event");
+    applicationDatabase.createCollection("student-state");
     appMongoClient.close();
   }
 

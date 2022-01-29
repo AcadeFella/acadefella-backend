@@ -1,5 +1,6 @@
 package com.acadefella.acadefellabackend.config;
 
+import com.acadefella.acadefellabackend.student.adapter.repository.StudentMongoDBEntityPackageMarker;
 import com.mongodb.ConnectionString;
 import com.mongodb.MongoClientSettings;
 import com.mongodb.ReadConcern;
@@ -14,7 +15,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 @Profile("test")
 @EnableMongoRepositories(
     basePackageClasses = {
-      //                ClaimDebtorMongoDBEntityPackageMarker.class,
+      StudentMongoDBEntityPackageMarker.class,
     })
 public class MongoDBConfigTestEnvironment extends MongoDBConfig {
 

@@ -1,13 +1,13 @@
 package com.acadefella.acadefellabackend.util;
 
-import com.acadefella.acadefellabackend.domain.student.core.StudentState;
-import com.acadefella.acadefellabackend.domain.student.core.command.CreateStudent;
-import com.acadefella.acadefellabackend.domain.student.core.value.*;
-import com.acadefella.acadefellabackend.domain.student.core.value.academic.RollNo;
-import com.acadefella.acadefellabackend.domain.student.core.value.academic.Section;
-import com.acadefella.acadefellabackend.domain.student.core.value.academic.Standard;
-import com.acadefella.acadefellabackend.domain.student.core.value.personal.*;
 import com.acadefella.acadefellabackend.message.StudentMessage;
+import com.acadefella.acadefellabackend.student.domain.command.CreateStudent;
+import com.acadefella.acadefellabackend.student.domain.core.StudentState;
+import com.acadefella.acadefellabackend.student.domain.core.value.*;
+import com.acadefella.acadefellabackend.student.domain.core.value.academic.RollNo;
+import com.acadefella.acadefellabackend.student.domain.core.value.academic.Section;
+import com.acadefella.acadefellabackend.student.domain.core.value.academic.Standard;
+import com.acadefella.acadefellabackend.student.domain.core.value.personal.*;
 import com.github.javafaker.Faker;
 import java.time.Instant;
 

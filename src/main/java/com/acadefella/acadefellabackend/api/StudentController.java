@@ -1,7 +1,7 @@
 package com.acadefella.acadefellabackend.api;
 
-import com.acadefella.acadefellabackend.domain.student.ports.service.StudentService;
 import com.acadefella.acadefellabackend.message.StudentMessage;
+import com.acadefella.acadefellabackend.student.ports.service.StudentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

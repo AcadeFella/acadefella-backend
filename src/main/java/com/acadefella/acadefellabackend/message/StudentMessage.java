@@ -1,10 +1,10 @@
 package com.acadefella.acadefellabackend.message;
 
-import com.acadefella.acadefellabackend.domain.student.core.command.CreateStudent;
-import com.acadefella.acadefellabackend.domain.student.core.value.PhoneNumber;
-import com.acadefella.acadefellabackend.domain.student.core.value.personal.Email;
-import com.acadefella.acadefellabackend.domain.student.core.value.personal.Name;
-import com.acadefella.acadefellabackend.domain.student.core.value.personal.Password;
+import com.acadefella.acadefellabackend.student.domain.command.CreateStudent;
+import com.acadefella.acadefellabackend.student.domain.core.value.PhoneNumber;
+import com.acadefella.acadefellabackend.student.domain.core.value.personal.Email;
+import com.acadefella.acadefellabackend.student.domain.core.value.personal.Name;
+import com.acadefella.acadefellabackend.student.domain.core.value.personal.Password;
 import java.time.Instant;
 import lombok.*;
 

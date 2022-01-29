@@ -2,7 +2,7 @@ package com.acadefella.acadefellabackend.message;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.acadefella.acadefellabackend.domain.student.core.command.CreateStudent;
+import com.acadefella.acadefellabackend.student.domain.command.CreateStudent;
 import com.acadefella.acadefellabackend.util.TestDataBuilder;
 import org.junit.jupiter.api.Test;
 
